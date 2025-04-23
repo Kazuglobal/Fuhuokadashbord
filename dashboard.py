@@ -16,10 +16,6 @@ hide_streamlit_style = """
     header {visibility: hidden;}
     footer {visibility: hidden;}
     .stActionButton {display: none;}
-    /* Streamlit Cloud 固有の右上ボタンを隠す試み */
-    .st-emotion-cache-1avcm0n {display: none;}
-    .st-emotion-cache-18ni7ap {display: none;}
-    .st-emotion-cache-6qob1r {display: none;}
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
