@@ -16,6 +16,9 @@ hide_streamlit_style = """
     header {visibility: hidden;}
     footer {visibility: hidden;}
     .stActionButton {display: none;}
+    /* Manage app（左上）の非表示 */
+    [data-testid="stSidebar"] > div:first-child {display: none !important;}
+    div:has(> button[title="Manage app"]) {display: none !important;}
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
