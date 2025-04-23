@@ -1,4 +1,14 @@
 import streamlit as st
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+import io
+import re
+import datetime
+from collections import deque
+import os
+
+st.set_page_config(page_title="福岡高校同窓会 会報入金者ダッシュボード", layout="wide")
 
 hide_streamlit_style = """
     <style>
@@ -49,7 +59,6 @@ def format_history(hist):
     return f"{hist[2].strftime('%Y-%m-%d %H:%M:%S')} | 条件: {hist[1]}"
 
 # --- ページ設定・CSS ---
-st.set_page_config(page_title="福岡高校同窓会 会報入金者ダッシュボード", layout="wide")
 st.markdown("""
 <style>
 body, .stApp { font-family: 'IPAexGothic', 'Noto Sans JP', 'Meiryo', 'sans-serif'; }
