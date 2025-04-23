@@ -1,4 +1,15 @@
 import streamlit as st
+
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stActionButton {display: none;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
