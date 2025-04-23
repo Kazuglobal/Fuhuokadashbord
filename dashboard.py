@@ -17,7 +17,6 @@ hide_streamlit_style = """
     footer {visibility: hidden;}
     .stActionButton {display: none;}
     /* Streamlit Cloud 固有の右上ボタンを隠す試み */
-    [data-testid="stHeader"] {display: none;}
     .st-emotion-cache-1avcm0n {display: none;}
     .st-emotion-cache-18ni7ap {display: none;}
     .st-emotion-cache-6qob1r {display: none;}
